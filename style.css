@@ -1,0 +1,23 @@
+h1 {
+  color: red;
+}
+
+h2 {
+  color: green;
+}
+ul {
+  list-style: none; /* Enlever les puces /
+  margin: 0;
+  padding: 0;
+}
+
+ol {
+  counter-reset: my-counter; / Réinitialiser le compteur de la liste numérotée /
+  margin: 0;
+  padding: 0;
+}
+
+ol li:before {
+  content: counter(my-counter) ". "; / Afficher le numéro de la liste numérotée /
+  counter-increment: my-counter; / Incrémenter le compteur de la liste numérotée */
+}
